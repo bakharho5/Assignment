@@ -1,0 +1,22 @@
+public class Example{
+
+	public static void main(String[] args) {
+		Anonymous  a=new Anonymous () {
+
+			@Override
+			public void Test() {
+				System.out.println("hi this anonymous ");
+				
+			}
+			
+		};
+		a.Test();
+		
+		
+	}
+	
+}
+
+abstract class Anonymous {
+	public abstract void Test();
+}

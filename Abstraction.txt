@@ -1,0 +1,45 @@
+//this is interface
+
+public interface AbstractionInterface {
+	
+	public abstract void Stuent1(String name,int rollno);
+	public abstract void Stuent2(String name,int rollno);
+	public abstract void student3(String name,int rollno);
+	
+
+}
+
+//and this is class
+
+public class Abstarction implements AbstractionInterface{
+
+
+	@Override
+	public void Stuent1(String name, int rollno) {
+		System.out.println("my name is "+name+" and rollno is "+rollno);
+		
+	}
+
+	@Override
+	public void Stuent2(String name, int rollno) {
+		// TODO Auto-generated method stub
+		System.out.println("my name is "+name+" and rollno is "+rollno);
+		
+	}
+
+	@Override
+	public void student3(String name, int rollno) {
+		// TODO Auto-generated method stub
+		System.out.println("my name is "+name+" and rollno is "+rollno);
+		
+	}
+	public static void main(String[] args) {
+		Abstarction a=new Abstarction();
+		a.Stuent1("kamalakar", 1);
+		a.Stuent2("hussain", 2);
+		a.student3("sai", 6);
+		
+
+	}
+
+}
